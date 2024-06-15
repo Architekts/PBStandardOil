@@ -1,0 +1,49 @@
+﻿l_english:
+
+##########################
+# MINISTERS
+
+
+##########################
+
+
+##########################
+# IDEAS
+##########################
+
+####################
+# FOCI
+#####################
+SFE_By_A_Thread:0 "Hanging by a Thread"
+SFE_By_A_Thread_desc:0 "The Republic is on the brink of collapse due to building tensions and current tribulations. The president is trying his best to hold the nation together, but with how decentralized his people are and how organized these troublemaking outsiders are, it's a neverending slog of diplomatic summersaults and unfortunate compromises."
+
+SFE_Stubborn_Goat:0 "The Stubborn Goat"
+SFE_Stubborn_Goat_desc:0 "George Patton, or as our president refers to him as 'the stubborn goat', is a wildcard. Some people see him as a good-natured rascal, other see him no more than a merciful thug.\n\nThe Republic continues to humor him by contracting his Desert Rangers to protect the roads and scattered townships from desperados, but Patton likes to push his luck because of his gusto, demanding for more and more money... 'or else'"
+
+SFE_Robber_Baron:0 "The Robber Baron"
+SFE_Robber_Baron_desc:0 "If it wasn't for Conrad Rockefeller, we wouldn't be able to continue to hire Patton. But, at the same time, we've essentially given him the entire northern provinces as a corporate fiefdom, with no regulation or oversight. Some think that 'Greed is good', but blatant exploitation is not viable for our continued existance."
+
+SFE_Find_Balance:0 "Finding a Balance"
+SFE_Find_Balance_desc:0 "The first step to sorting out our troubles is coming up with a plan to even the odds here. We cannot continue to let this cancererous situation grow worse, or we will shrivel and die."
+
+#######################
+# COUNTRY FLAGS
+######################
+
+###################
+# EVENTS
+#################
+
+American.2.t:0 "Emergency Telegram"
+American.2.d:0 "The president returned to his train after visiting the bordertown of Las Cruces for evaluating and putting together a relief effort regarding a poor harvest this season. When he entered his the train's government  car, he was approached by his aide frantically. Something was clearly wrong. He reads over the telegram:\n\n//*//\n\nEMERGENCY NOTICE -- STOP\n\n\nSANTA FE & ALBUQUERQUE RAZED BY DESPERADOS AND APACHES -- STOP\n\nDESERT RANGERS ABANDONED PATROLS - PATTON'S ORDERS -- STOP\n\nBOOMTOWN & NORTHBASIN UNDER CONTROL OF BARON & PINKERTONS -- STOP\n\nREQUESTING IMMEDIATE SUPPORT -- STOP\n\n//*//"
+
+American.2.a:0 "Nuts!"
+American.2.b:0 "I was tired of listening to those yellow-bellied pricks anyways."
+American.2.c:0 "Now we can really get down to business."
+
+
+PBNews.207.t:0 "SANTA FE DIVIDED"
+
+PBNews.207.d:0 "Reports are coming in from the North American nation of Santa Fe that both the Union Standard Oil Company and the Desert Rangers, once official subsections of the Santa Fe government, have broken off and formed their own independent nations after Santa Fe and Albuquerque were plundered by a band of Desperados and Apaches, shattering the illusion of control.\n\nThe main reasons of the secessions are the result of leaving the autonomous regions unchecked in the matters of economic and social policies, essentially being independant all but in name."
+
+PBNews.207.a:0 "America remains disunited."

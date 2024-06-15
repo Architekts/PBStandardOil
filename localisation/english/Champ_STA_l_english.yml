@@ -1,0 +1,232 @@
+﻿l_english:
+
+##########################
+# MINISTERS
+
+Champ_Rockefeller_Leader_desc:0 "rocky boy"
+##########################
+# SUPEREVENTS
+
+SPEVNT_Duke_Goes_East:0 "WRATH OF THE DUKE"
+SPEVNT_Duke_Goes_East_TEXT:0 "'It appeared as if the whole world was one elaborate system, opposed to justice and kindness, and set to making cruelty and pain.'\n\n- Upton Sinclair"
+SPEVNT_Duke_Goes_East_CLOSETEXT:0 "A rather nasty character, indeed."
+
+##########################
+# IDEAS
+##########################
+PB_STA_Missing_Workforce:0 "Missing Workforce"
+PB_STA_Missing_Workforce_desc:0 "Currently being affected by a labor shortage due to our operations being in the sparse and isolated frontier, resulting in a decrease in production efficiency"
+
+PB_STA_Multiethnic_Workforce:0 "Motivated Workforce"
+PB_STA_Market_Manipulation_desc:0 "Through reforms in favor of the working man, we have given hope to migrants and fellow Americans alike in the shared vision of the American dream that sits upon the horizon"
+
+PB_STA_Average_Stock_Value:0 "Average Stock Value"
+PB_STA_Average_Stock_Value_desc:0 "It's no penny stock, but we aren't a Fortune 500 company either. We're doing fine, but we could be doing better"
+
+PB_STA_Petrostate:0 "Petrostate"
+PB_STA_Petrostate_desc:0 "Our main export is solely based on crude oil and refinement. If there was ever to be a recession within the commodities market, we will suffer the consequences..."
+
+PB_STA_Concessions:0 "Eastern Concessions"
+PB_STA_Concessions_desc:0 "We are currently paying concessions to the eastern branch of Standard Oil, due to their claim of infringement of using the Standard Oil name."
+
+PB_STA_Market_Manipulation:0 "Market Maniputation"
+PB_STA_Market_Manipulation_desc:0 "By any means necessary, we will grab th"
+
+PB_STA_Subsidiary:0 "Eastern Subsidiary"
+PB_STA_Subsidiary_desc:0 "After the hostile takeover, the Boomtown operation has fallen under the influence of the eastern branch of Standard Oil proper, and thus has its primary focus and resources directed elsewhere within the conglomerate"
+
+PB_STA_Pinkertons_0:0 "Pinkertons"
+PB_STA_Pinkertons_0_desc:0 "The Pinkerton Detective Agency have been the strong-arm of American corporations since the industrial age. For the right amount of money, they will conduct espionage, union-bust, assassinate, and anything else on the table for the right price. The thing about it, is that if you can buy their services, someone else can, so it's always advised to watch your back around them."
+
+####################
+# FOCI
+#####################
+STA_Gen_1:0 "Adventure Capitalism"
+STA_Gen_1_desc:0 "Who would’ve thought that the distant cousin far-removed from the familial inheritance would come to recreate the success of his great-grandfather, the legendary John D. Rockefeller?\n\nConrad was the one to come out here and survey the land, stake the claim, and cut the deals with the locals. But now that Sante Fe cannot protect our interests or serve our needs, we’re better off on our own."
+
+STA_Gen_2:0 "Internal Audit"
+STA_Gen_2_desc:0 "things aint lookin too good pardner"
+
+STA_Gen_3:0 "Market Analysis"
+STA_Gen_3_desc:0 "things aint lookin too good pardner"
+
+STA_Gen_4:0 "Margin Call"
+STA_Gen_4_desc:0 "There's someone at the door. I wonder who it could be?"
+
+STA_Concessions:0 "Family Dues"
+STA_Concessions_desc:0 "As it stands, the wisest thing to do long-term is to pay off John for the time being. We're only getting started out here, no need to risk it all when we have so much to gain. Besides, contracts are meant to be broken, it's just a matter of when we want to do it."
+
+STA_Honest_1a:0 "Negotiate Labor Conditions"
+STA_Honest_1a_desc:0 "Believe it or not, people do not like to be worked to death in unsafe workplace conditions. Other than allowing unions form (god forbid), we would be willing to meet with these leaders of the laborers to raise the standard for conditions in the workplace."
+
+STA_Honest_1b:0 "Land of Opprotunity"
+STA_Honest_1b_desc:0 "With the Automation Crisis wreaking havoc in the east, we have a unique opprotunity to attract the unemployed masses with a stable job in the western frontier."
+
+STA_Honest_1c:0 "Employment Benefits"
+STA_Honest_1c_desc:0 "To further the fair deal, we should offer our employees not only a fair wage, but certain assurances in case they are injured or sick."
+
+STA_Chinese_Inclusion_Act:0 "Chinese Inclusion Act"
+STA_Chinese_Inclusion_Act_desc:0 "Immigrants from China have always gotten a raw deal in the American frontier.\n\nUsually ostricized, exploited, or outright expelled, they are scattered in a diaspora across the continent. Let us extend a welcome hand to these folks in giving them a home."
+
+STA_Bolstered_Workforce:0 "Honest Work, Honest Wages"
+STA_Bolstered_Workforce_desc:0 "Something uncommon nowadays is a basic understanding between the employer and the laborer. Usually forced to work in horrible conditions for little pay, they will find not only a decent wage for their work but also assurances for safer working conditions, health insurance and dismissal of racial prejudices.\n\nLike a light shining in darkness"
+
+STA_Farmer_Subsidies:0 "Agricultural Subsidies"
+STA_Farmer_Subsidies_desc:0 "Its hard to make anything grow out here, especially if your family is alone and poor as hell. With a mutual agreement and a little money, we can help revitalize these barren fields and ranches."
+
+STA_Early_Resignation:0 "Forced Resignation"
+STA_Early_Resignation_desc:0 "The hostile takeover by the corporate raider succeeds."
+
+STA_Die_John:0 "Drastic Measures"
+STA_Die_John_desc:0 "My god, he really did shoot him."
+
+STA_Economic_1:0 "Milkshake Theory"
+STA_Economic_1_desc:0 "'If have a milkshake and you have a milkshake, but if I have a very looooong straw...'"
+
+STA_Economic_2b:0 "Electrification"
+STA_Economic_2b_desc:0 "We'll enlighten the rustic folk with the wonders of electricity"
+
+STA_Urbanization:0 "Urbanization"
+STA_Urbanization_desc:0 ""
+
+STA_Rural_Education:0 "Rural Education"
+STA_Rural_Education_desc:0 "Lets give these country bumpkins something to think about"
+
+STA_Research_5a:0 "Lessons from Tesla"
+STA_Research_5a_desc:0 "It's about time that we bring the wonders of the modern world to the west, particularly the technology derived from Tesla's inventions."
+
+STA_Research_4b:0 "Coast to Coast"
+STA_Research_4b_desc:0 ""
+
+STA_Research_5b:0 "Electronic Telegram"
+STA_Research_5b_desc:0 "Some new technology that has been brought to us for sponsorship is something called 'the electronic telegram', where through radiowaves and other such nonsense, we can instantaneously deliver messages directly from 2 different machines. The Edison Corporation failed to make a reasonable compromise with the inventor... let's see what we can do."
+
+STA_Research_2a:0 "Invite the Eggheads"
+STA_Research_2a_desc:0 ""
+
+STA_Research_2:0 "Smartest Guys in the Room"
+STA_Research_2_desc:0 ""
+
+STA_Research_Final:0 "Found Rockefeller University"
+STA_Research_Final_desc:0 "We've come a long ways out here in the frontier, forging civilization in the wilderness for many to call home. In an act of philanthropy, we shall found the Rockefeller University to continue to push the boundaries of progress in the land of opprotunity out here."
+
+STA_Economic_2c:0 "Bring in Investors"
+STA_Economic_2c_desc:0 "In an effort to build up our operations out here, we'll put together some lobbying efforts to attract investors."
+
+STA_Economic_3:0 "Lands of Opprotunity"
+STA_Economic_3_desc:0 "We've posessed lands underutilized by its former proprietors. Let's correct their faults and make something great out here."
+
+STA_Military_1:0 "Dealing with the Pinkertons"
+STA_Military_1_desc:0 "We'll have to decide on what to do about our reliance on the Pinkertons, who have served as loyal enforcers for us since our founding out here, but until the recent incident, we must put their loyalty into question."
+
+STA_Pinkerton_1:0 "Doubling Down"
+STA_Pinkerton_1_desc:0 "The Pinkertons are too useful of an asset to abandon. Let's use them "
+
+STA_Mid_Pinkerton:0 "Into the Fold"
+STA_Mid_Pinkerton_desc:0 "Just so that the prior incident can never happen again, we will purchase the Pinkerton Detective Agency outright and redirect any business dealings through our main channels, essentially converting them into a militarized branch of the Rockefeller conglomerate."
+
+STA_Pinkertactics_b1:0 "I Can't Feel Anything"
+STA_Pinkertactics_b1_desc:0 "Good thing we're so drugged up otherwise the bullet I just took to the lung would probably really hurt right now"
+
+STA_Pinkertactics_b2:0 "Strikebreakers"
+STA_Pinkertactics_b2_desc:0 "The favorite pastime for the Pinkertons: union busting and strike-breaking. Let's have them excel at their art by giving them Hardsuits.\n\nIt would be interesting to see how an angry factory worker would stand against the unstoppable force from the boot of a mechanized supersoldier.\n\nLets see what happens!"
+
+STA_Pinkertactics_c2:0 "Mental Conditioning"
+STA_Pinkertactics_c2_desc:0 "In their line of business, we cannot allow morality to cause any faults in their performance. A series of chemical injections and indoctrination classes will iron out any mental defficiencies"
+
+STA_Final_Pinkerton:0 "Cloak and Dagger"
+STA_Final_Pinkerton_desc:0 "The Pinkertons have evolved from a simple gang of henchmen, they have been given the means to become something greater. Now resembling the most advanced group of operators and specialists, they are undoubtably the most deadliest men and women to walk the planet."
+
+STA_Peasant_Army:0 "Local Enforcers"
+STA_Peasant_Army_desc:0 "The Pinkertons have shown to be too unreliable... there is always the chance of a bigger spender when it comes to mercenaries, and our legacy cannot rely on unreliable, but trust in those who call this place home.\n\nThey might not be experienced, but even the dullest blade can be sharpened if you spend some time to work it out."
+
+STA_Johnomics_1:0 "As It Should Be"
+STA_Johnomics_1_desc:0 "my daddy is rich and you are not"
+
+STA_Johnomics_2:0 "Patriots are in Control"
+STA_Johnomics_2_desc:0 "i love america"
+
+STA_Johnomics_4a:0 "Change in Management"
+STA_Johnomics_4a_desc:0 "Some leftover supporters of the previous management remain within the ranks here. It would be wise to get rid of these slackers."
+
+STA_Johnomics_5a:0 "Eastern Contracts"
+STA_Johnomics_5a_desc:0 "Standard Oil has a long-standing relationship with the United Commonwealth and it's wealthy artistocracy. It's time to pull some strings to get this operation back into order"
+
+STA_Evil_Economic_1:0 "Darwinian Economics"
+STA_Evil_Economic_1_desc:0 "They have forced our hand. We must achieve prosperity through any means necissary, and destroy anything and anyone standing in our way."
+
+
+STA_Evil_Economic_2a:0 "Loan Sharks"
+STA_Evil_Economic_2a_desc:0 "Predatory loans are an easy way to accumulate things of value. This can help generate some more income to keep our operations afloat."
+
+STA_Evil_Economic_2b:0 "Indentured Servitude"
+STA_Evil_Economic_2b_desc:0 "If loans cannot be recollected and the offender has nothing of value, they are placed into indentured servitude 'until the debt is paid off', which usually means they are sentenced to hard labor until they... 'expire'"
+
+STA_Evil_Economic_2c:0 "Put Them To Work!"
+STA_Evil_Economic_2c_desc:0 "igor!"
+
+
+STA_Evil_Economic_3a:0 "Veiled Intentions"
+STA_Evil_Economic_3a_desc:0 "There is land out there that is rich with resources and the landowner has no idea. Agents of the Union Standard Oil company approach these folk under with fake stories to investigate it's viability for future projects. If it proves to have potential, they will lie to buy the property at a significant lower cost, otherwise there is always the option of force."
+
+STA_Evil_Economic_3b:0 "Agricorp Megafarms"
+STA_Evil_Economic_3b_desc:0 "With the land we've illicitly aquired, we can elimitate the competiton in this region by establishing state-sponsored megafarms, to destroy the humble farmer's influence on agricultural prices. This will help diversify our commodities."
+
+STA_Evil_Economic_3c:0 "Unregulated Bioengineering"
+STA_Evil_Economic_3c_desc:0 "soylent green is people!!! and you are a test tube baby"
+
+
+STA_Evil_Economic_4a:0 "Useful Idiots"
+STA_Evil_Economic_4a_desc:0 "soyjack"
+
+STA_Evil_Economic_4b:0 "Insider Trading"
+STA_Evil_Economic_4b_desc:0 "enron be like"
+
+STA_Evil_Economic_4c:0 "Market Manipulation"
+STA_Evil_Economic_4c_desc:0 "loadsamoney"
+
+STA_Evil_Complete:0 "Dirty Jobs"
+STA_Evil_Complete_desc:0 "loadsamoney"
+
+STA_Johnomics_5b:0 "Seasonal Rotations"
+STA_Johnomics_5b_desc:0 "In order to capitalize on the Automation Crisis, we will offer jobs out west to fill the recently purged positions from the old management in addition to new job openings.\n\nRotations between our eastern and western job sites offer a sense of adventure out west and security back at home."
+
+STA_Johnomics_Complete:0 "Rise of a Gryphon"
+STA_Johnomics_Complete_desc:0 "loadsamoney"
+
+STA_Remove_Concessions:0 "Eclipse the East"
+STA_Remove_Concessions_desc:0 "Our efforts to bolster our economy despite the interference of the eastern branch of Standard Oil have proven to bear fruit. Not only have we succeeded in stabilizing and diversifying, but we outpreform the eastern branch as well.\n\nNo longer in fear of being overthrown in a hostile takeover, we will take the reigns of the Standard Oil legacy and begin planning our next big moves."
+
+STA_War_1:0 "Mergers and Aquisitions"
+STA_War_1_desc:0 "We cannot be confined to this patch of desert forever. There are certain territories held by peasants, squatters, and warlords that would serve much better under our administration."
+
+STA_War_2a:0 "Pacify the Rangers"
+STA_War_2a_desc:0 "Patton was a useful pawn during the liberation from Santa Fe, but now he stands to be one of our most threatening neightbor if he is left unchecked."
+
+STA_War_2b:0 "Commit Regicide"
+STA_War_2b_desc:0 "Grangerlands are a strange little relic of feudalism, with a squatter sitting on the throne in Jefferson city. Lets kick this would be 'lord' off his high horse and put the land to use. They are rich with crude oil."
+
+STA_War_2c:0 "Seize Tornado Alley"
+STA_War_2c_desc:0 "Comancheria is a native stronghold in the land of the thunderous buffalo herds and tornados. Underneath these plains are a sea of oil, ready to be drained of everything its worth"
+
+#######################
+# COUNTRY FLAGS
+######################
+
+###################
+# EVENTS
+#################
+
+American.4.t:0 "Union Standard Oil Internal Audit Report, 1933"
+American.4.d:0 "Our situation here is pretty comfortable for the most part. Boomtown sits on a very abundant deposit of crude oil, and our developments in refinement techniques have improved drastically over the years.\n\nThe immediate problem Standard Oil is facing is in regards to the sparse workforce. In retaliation to our secession, former employees were forbidden to return by the order of the Santa Fe government. This normally wouldn’t be a problem for a large corporation, but being in the Wild West comes with the added problem of being removed from the dense population centers you would normally find in the east. We will have to be creative to fill these openings.\n\nAdditionally, we are somewhat inexperienced in the nature of governance, we're businessmen not politicians. For now, we leave the very small frontier communities to their own devices, but this way of governance isn’t going to last long term if we plan on making a difference out here."
+American.4.a:0 "Let's get to work!"
+
+American.3.t:0 "Unexpected Visitors"
+American.3.d:0 "One morning, Conrad was sitting at his desk looking over some surveys of potential expansions, when a knock on his office door rang out. ‘Mr. Rockefeller, sir?’ his female secretary calls out. ‘You have a visit from some family.’\n\nA bit perplexed, he lowers the documents and calls for them to come in, not expecting a visit from anyone. To his surprise, in struts John D. Rockefeller III, direct heir of Standard Oil proper and son of the current proprietor, John Rockefeller II. He’s wearing some very nice clothing; the kind of fabrics you won't find out here in the plains, which means he must’ve just arrived from the Dominion.\n\n‘Ah. There you are, Conrad!’ he exclaims with a smug grin on his face, as he removes his leather gloves. “Quite the..’enterprise’ you’ve thrown together here, old boy. Nothing compared to what we got back home, but it's an admirable attempt nonetheless.”\n\n‘What do you want, John?’ Conrad asks. He never particularly liked him, and he only met him once when they were boys and another at a gala.\n\n‘I came to settle some business,’ John starts, and casually sits down in a chair, with his henchmen lingering behind him. He holds out his cigar for his henchmen to light. ‘You owe a debt, I’m afraid. You’ve used the Standard Oil name without consulting us, and now that you’ve participated in this whole charade out here in Timbuktu, it’s complicated things out east. I’d elaborate further but I don’t think you’d comprehend it.’ he says before he takes a puff. \n\n‘You have two options, I’m afraid.’ he says, blowing his cigar smoke in the air. ‘One, you can forfeit your little fief out here,” he says with a scoff. ‘Or two, we can come to an agreement. You can continue to use the name so long as we receive the proper compensation for your infringement.’"
+American.3.a:0 "You’ll get your money.."
+American.3.b:0 "Conrad disagrees, and John won't take no for an answer"
+American.3.c:0 "Conrad eye twitches as he pulls out a revolver and shoots John in the head"
+
+American.5.t:0 "1933 Market Analysis"
+American.5.d:0 "As it stands, our main competition originates from Texaco in Dallas and Petro-Amiga in California, as they are the largest producers of crude oil in the region by far. They sit on a sea of black gold, and it will be a herculean task to overtake their supremacy within the market\n\nIn regards to our place within the North America market, Union Standard Oil is near the bottom of the totem pole. We turn a good profit based on the Boomtown derricks and refinery services we offer to other gas companies, but nothing that can influence the global stage. We are not like the main branch, Standard Oil proper (who is based within the Dominion), and are very limited on our variety of locations.\n\nSomething else that concerns external financiers is our dependence on crude oil as our main export. Being coined as a ‘Petrostate’, we are open to the falling victim to the Dutch Disease, the conditions where our dependence on one commodity can lead to a total economic collapse if the oil trade was to have a recession. Diversification is the solution, but out here in the middle of nowhere it's hard to find something that’s valuable to trade...\n\nWe will have to get creative to sort this out."
+American.5.a:0 "Can't afford put all our eggs in one basket"

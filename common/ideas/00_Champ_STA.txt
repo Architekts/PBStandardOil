@@ -1,0 +1,254 @@
+##################
+# STANDARD OIL IDEAS
+##################
+
+ideas = {
+
+	country = {
+
+		PB_STA_Concessions = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = PB_IRE_unhappy_compromise
+			
+			removal_cost = -1
+	
+			modifier = {
+            	consumer_goods_factor = 0.35
+				political_power_factor = -0.25
+				local_resources_factor = -0.35
+			}
+		}
+
+		PB_STA_Subsidiary = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = GFX_idea_AME_MegaCorpTax
+			
+			removal_cost = -1
+	
+			modifier = {
+            	consumer_goods_factor = 0.35
+				political_power_factor = -0.25
+			}
+		}
+
+		PB_STA_Missing_Workforce = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = SPA_recovering_from_the_civil_war
+			
+			removal_cost = -1
+	
+			modifier = {
+                production_factory_efficiency_gain_factor = -0.05
+				production_factory_start_efficiency_factor = -0.05
+				local_resources_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_infrastructure_factor = -0.05
+			}
+		}
+
+		PB_STA_Multiethnic_Workforce = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = GFX_idea_AME_Renewal
+			
+			removal_cost = -1
+	
+			modifier = {
+                production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				local_resources_factor = 0.05
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+
+		PB_STA_Debt_Slavery = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = GFX_idea_AME_Renewal
+			
+			removal_cost = -1
+	
+			modifier = {
+                production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				local_resources_factor = 0.05
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+
+		PB_STA_Average_Stock_Value = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = ITA_De_Stefani_Plan
+
+			modifier = {
+				political_power_factor = 0.05
+			}
+
+			removal_cost = -1
+	
+		}
+
+		PB_STA_Petrostate = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = IRQ_oil_economy
+
+			modifier = {
+				political_power_factor = 0.05
+				stability_weekly = -0.002
+			}
+
+			removal_cost = -1
+	
+		}
+
+		PB_STA_Market_Manipulation = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = USA_Subsidy_Sprees
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				send_volunteer_size = 4
+			}
+
+			removal_cost = -1
+	
+		}
+
+		PB_STA_Pinkertons_0 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = HOL_unemployed_conscription
+			
+			modifier = {
+				experience_gain_army_factor = -0.2
+				send_volunteer_divisions_required = -0.4
+				army_attack_factor = 0.1
+				consumer_goods_factor = 0.1
+				non_core_manpower = -0.2
+			}
+
+			removal_cost = -1
+	
+		}	
+
+		PB_STA_Pinkertons_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = GSX_idea_HOL_defense_spending_spree
+			
+			modifier = {
+				experience_gain_army_factor = 0.05
+				send_volunteer_divisions_required = -0.4
+				army_attack_factor = 0.05
+				special_forces_attack_factor = 0.1
+				non_core_manpower = -0.3
+			}
+
+			removal_cost = -1
+	
+		}
+		PB_STA_Pinkertons_2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = GSX_idea_HOL_defense_spending_spree
+			
+			modifier = {
+				experience_gain_army_factor = 0.1
+				send_volunteer_divisions_required = -0.6
+				army_attack_factor = 0.05
+				special_forces_attack_factor = 0.2
+				non_core_manpower = -0.35
+			}
+
+			removal_cost = -1
+	
+		}				
+	}
+}
+
+

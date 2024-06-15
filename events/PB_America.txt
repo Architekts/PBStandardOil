@@ -1,0 +1,319 @@
+###################
+# AME - Parliament
+###################
+
+add_namespace = American
+
+
+country_event = { #The SCA Spawn
+	id = American.1
+	title = American.1.t
+	desc = American.1.d
+	picture = GFX_report_PB_Secret_Documents
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #This Event is used to spawn the SCA
+		name = American.1.a
+		country_event = { 
+			id = SCA.1 
+			days = 3 
+		}
+		ai_chance = {
+			factor = 50
+		}
+
+	}
+
+}
+
+country_event = { #Sante Fe collapse
+	id = American.2
+	title = American.2.t
+	desc = American.2.d
+	picture = GFX_report_PB_Secret_Documents
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #sante fe collapse stay SFE
+		name = American.2.a
+
+		news_event = {
+			id = PBNews.207
+			days = 1
+		}
+		STA = {
+			transfer_state = 894
+			add_state_core = 894
+			transfer_state = 881
+			add_state_core = 881
+			load_oob = "STA_1933"
+		}
+		DER = {
+			transfer_state = 797
+			add_state_core = 797
+			transfer_state = 904
+			add_state_core = 904
+			load_oob = "DER_1933"
+		}
+		SFE = {
+			remove_state_core = 894
+			remove_state_core = 881
+			remove_state_core = 797
+			remove_state_core = 904
+		}
+
+		ai_chance = {
+			factor = 50
+		}
+
+	}
+
+	option = { #sante fe collapse switch to DER
+		name = American.2.b
+
+		news_event = {
+			id = PBNews.207
+			days = 1
+		}
+		DER = {
+			change_tag_from = SFE
+	    }
+		STA = {
+			transfer_state = 894
+			add_state_core = 894
+			transfer_state = 881
+			add_state_core = 881
+			load_oob = "STA_1933"
+		}
+		DER = {
+			transfer_state = 797
+			add_state_core = 797
+			transfer_state = 904
+			add_state_core = 904
+			load_oob = "DER_1933"
+		}
+		SFE = {
+			remove_state_core = 894
+			remove_state_core = 881
+			remove_state_core = 797
+			remove_state_core = 904
+		}
+
+		ai_chance = {
+			factor = 10
+		}
+
+	}	
+
+	option = { #sante fe collapse switch to STA
+		name = American.2.c
+
+		news_event = {
+			id = PBNews.207
+			days = 1
+		}
+		STA = {
+			change_tag_from = SFE
+	    }		
+		STA = {
+			transfer_state = 894
+			add_state_core = 894
+			transfer_state = 881
+			add_state_core = 881
+			load_oob = "STA_1933"
+		}
+		DER = {
+			transfer_state = 797
+			add_state_core = 797
+			transfer_state = 904
+			add_state_core = 904
+			load_oob = "DER_1933"
+		}
+		SFE = {
+			remove_state_core = 894
+			remove_state_core = 881
+			remove_state_core = 797
+			remove_state_core = 904
+		}
+
+
+		ai_chance = {
+			factor = 10
+		}
+
+	}	
+
+}
+
+country_event = {	#STA margin call
+	id = American.3
+	title = American.3.t
+	desc = American.3.d
+	picture = GFX_report_event_international_treaty9
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #cope
+		name = American.3.a
+		ai_chance = {
+			factor = 5
+		}
+		complete_national_focus = STA_Concessions
+
+		STA = {
+			add_ideas = PB_STA_Concessions
+		}
+	
+	}
+	option = { #corporate raider
+		name = American.3.b
+		ai_chance = {
+			factor = 5
+		}
+		complete_national_focus = STA_Early_Resignation
+		create_country_leader = {
+			name = "John D. Rockefeller III"
+			desc = "STA_JohnRockIII_Desc"
+			picture = "Portrait_JohnRockIII.dds"
+			expire = "1965.1.1"
+			ideology = AN_VARIANT_01
+		}
+
+		
+
+	}
+	option = { #kill john evil
+		name = American.3.c
+
+		complete_national_focus = STA_Die_John
+
+		set_politics = {
+			ruling_party = NI
+				elections_allowed = no
+		}
+
+		add_popularity = {
+			ideology = ni
+			popularity = 1
+		}
+
+		ai_chance = {
+			factor = 5
+		}
+	}	
+}
+
+country_event = {		#internalanalysis
+	id = American.4
+	title = American.4.t
+	desc = American.4.d
+	picture = GFX_report_event_physics_lab
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = American.4.a
+		ai_chance = {
+			factor = 5
+		}
+
+		STA = {
+			add_ideas = PB_STA_Missing_Workforce
+			add_ideas = PB_STA_Pinkertons_0
+			
+			set_technology = {
+				fuel_silos = 1
+				fuel_refining = 1
+				synth_oil_experiments = 1
+			}
+
+		}
+		881 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}				
+			add_building_construction = {
+				type = fuel_silo
+				level = 1
+				instant_build = yes
+			}	
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}	
+		}
+	}
+}
+
+country_event = {		#marketanalysis
+	id = American.5
+	title = American.5.t
+	desc = American.5.d
+	picture = GFX_report_event_conference
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = American.5.a
+		ai_chance = {
+			factor = 5
+		}
+
+		STA = {
+			add_ideas = PB_STA_Average_Stock_Value
+			add_ideas = PB_STA_Petrostate
+		}
+
+	}
+}
+
+country_event = {		#dealing with pinkertons
+	id = American.6
+	title = American.6.t
+	desc = American.6.d
+	picture = GFX_report_event_conference
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { # keep them around
+		name = American.6.a
+		ai_chance = {
+			factor = 5
+		}
+		complete_national_focus = STA_Military_2a
+
+		STA = {
+			add_ideas = PB_STA_Concessions
+		}
+	
+	}
+	option = { # peoples army
+		name = American.6.b
+		ai_chance = {
+			factor = 5
+		}
+		complete_national_focus = STA_Military_2b
+		
+		STA = {
+			add_ideas = PB_STA_Concessions
+		}
+
+	}
+}

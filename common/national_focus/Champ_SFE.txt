@@ -1,0 +1,145 @@
+focus_tree = {
+	id = sfe_focus
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = SFE
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 510 y = 800 }
+
+	focus = {
+		id = SFE_By_A_Thread
+		icon = GFX_GER_let_them_fight
+		x = 8
+		y = 0
+		cost = 8
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_stability = -.3
+		}
+	}
+
+	focus = {
+		id = SFE_Stubborn_Goat
+		icon = GFX_AME_the_bonus_brigade_crisis
+		x = 8
+		y = 1
+		cost = 14
+
+		prerequisite = {
+			focus = SFE_By_A_Thread
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_stability = -.05
+			797 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}		
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}			
+				add_building_construction = {
+					type = bunker
+					province = 10582
+					level = 3
+				}
+			}
+			908 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}		
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}			
+			}
+		}
+	}
+
+	focus = {
+		id = SFE_Robber_Baron
+		icon = GFX_goal_GER_Free_Economy
+		x = 8
+		y = 2
+		cost = 14
+
+		prerequisite = {
+			focus = SFE_Stubborn_Goat
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			881 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}					
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}	
+			}
+			908 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}		
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SFE_Find_Balance
+		icon = GFX_goal_PB_GER_Europe_Autonomy
+		x = 8
+		y = 4
+		cost = 14
+
+		prerequisite = {
+			focus = SFE_Robber_Baron
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = American.2
+		}
+	}
+
+}

@@ -1,0 +1,2390 @@
+focus_tree = {
+	id = champ_sta_focuses
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = STA
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 4000 y = 50 }
+
+	focus = {
+		id = STA_Gen_1
+		icon = GFX_goal_Generic_Extravagence
+		x = 10
+		y = 0
+		cost = 7
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+	focus = {
+		id = STA_Gen_2
+		icon = GFX_goal_Focus_Examine_Foreign_Laws
+		x = 10
+		y = 1
+		cost = 25
+
+		prerequisite = {
+			focus = STA_Gen_1
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = American.4 
+		}
+	}
+
+	focus = {
+		id = STA_Gen_3
+		icon = GFX_goal_Generic_Industry_Question
+		x = 10
+		y = 2
+		cost = 25
+
+		prerequisite = {
+			focus = STA_Gen_2
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = American.5
+		}
+	}
+
+	focus = {
+		id = STA_Gen_4
+		icon = GFX_goal_PB_AME_Contract_with_Dolbear_Bell
+		x = 10
+		y = 3
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Gen_3
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = American.3 
+		}
+	}
+
+	focus = {
+		id = STA_Economic_1
+		icon = GFX_goal_Focus_STA_milkshake
+		x = 27
+		y = 0
+		cost = 60
+
+        available = {
+			OR = {
+				has_completed_focus = STA_Concessions
+				has_completed_focus = STA_Early_Resignation
+				has_completed_focus = STA_Die_John
+			}
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			881 = {
+				add_resource = {
+					type = oil
+					amount = 25
+				}
+			}
+			966 = {
+				add_resource = {
+					type = oil
+					amount = -25
+				}
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = STA_Economic_2a
+		icon = GFX_goal_Generic_Science
+		x = 23
+		y = 1
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Economic_1
+		}
+
+        available = {
+			OR = {
+
+			}
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			PB_Literacy_Small_Progress_Increase = yes
+		}
+	}
+
+	focus = {
+		id = STA_Economic_2b
+		icon = GFX_goal_Generic_Electrification
+		x = 25
+		y = 1
+		cost = 60
+		prerequisite = {
+			focus = STA_Economic_1
+		}
+        available = {
+
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Economic_2c
+		icon = GFX_goal_Generic_Monopoly
+		x = 27
+		y = 1
+		cost = 60
+		prerequisite = {
+			focus = STA_Economic_1
+		}
+        available = {
+			has_political_power > 200
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = -200
+			PB_Poverty_Small_Progress_Increase = yes
+			PB_Economy_Small_Progress_Increase = yes
+		}
+	}
+
+	focus = {
+		id = STA_Economic_2d
+		icon = GFX_goal_Generic_Oil_Production
+		x = 30
+		y = 1
+		cost = 60
+		prerequisite = {
+			focus = STA_Economic_1
+		}
+        available = {
+
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_MilFac_1
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 29
+		y = 2
+		cost = 60
+		prerequisite = {
+			focus = STA_Economic_2d
+		}
+        available = {
+
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Research_2
+		icon = GFX_goal_Generic_Shady_Deal
+		x = 24
+		y = 2
+		cost = 60
+		prerequisite = {
+			focus = STA_Economic_2a
+		}
+		prerequisite = {
+			focus = STA_Economic_2b
+		} 
+		available = {
+
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = STA_Urbanization
+		icon = GFX_goal_Generic_Broadway
+		x = 25
+		y = 3
+		cost = 60
+		prerequisite = {
+			focus = STA_Research_2
+		}
+		prerequisite = {
+			focus = STA_Economic_3
+		}
+
+		available = {
+			owns_state = 799
+			owns_state = 901
+			owns_state = 382
+			owns_state = 376
+			owns_state = 374
+			owns_state = 799
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Research_4b
+		icon = GFX_goal_Generic_Radio_Communication
+		x = 24
+		y = 4
+		cost = 60
+		prerequisite = {
+			focus = STA_Urbanization
+		}
+		available = {
+
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Research_5b
+		icon = GFX_goal_PB_AME_Promote_the_IBM_Alternative
+		x = 24
+		y = 5
+		cost = 60
+		prerequisite = {
+			focus = STA_Research_4b
+		}
+		available = {
+
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = STA_Rural_Education
+		icon = GFX_goal_PB_AME_Free_Edu
+		x = 22
+		y = 4
+		cost = 60
+		prerequisite = {
+			focus = STA_Urbanization
+		}
+		available = {
+
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Research_5a
+		icon = GFX_goal_Generic_Cult_of_Reason
+		x = 22
+		y = 5
+		cost = 60
+		prerequisite = {
+			focus = STA_Rural_Education
+		}
+		available = {
+
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = STA_Research_Final
+		icon = GFX_AME_a_new_dawn_over_philadelphia
+		x = 23
+		y = 6
+		cost = 60
+		prerequisite = {
+			focus = STA_Research_5a
+		}
+
+		prerequisite = {
+			focus = STA_Research_5b
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}	
+
+	focus = {
+		id = STA_Economic_2de
+		icon = GFX_goal_Focus_STA_milkshake
+		x = 31
+		y = 2
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Economic_2d
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Economic_3
+		icon = GFX_goal_Generic_Mountain_Warfare
+		x = 27
+		y = 2
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Economic_2c
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+
+	focus = {
+		id = STA_Economic_4a
+		icon = GFX_goal_Generic_Automobile_Production
+		x = 26
+		y = 4
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Urbanization
+			focus = STA_Industrialization
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Economic_5a
+		icon = GFX_goal_GER_Attract_Investors
+		x = 26
+		y = 5
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Economic_4a
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = STA_Economic_6a
+		icon = GFX_goal_GER_Attract_Investors
+		x = 26
+		y = 6
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Economic_5a
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = STA_Economic_4b
+		icon = GFX_goal_GER_Attract_Investors
+		x = 28
+		y = 4
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Urbanization
+			focus = STA_Industrialization
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Economic_5b
+		icon = GFX_goal_GER_Attract_Investors
+		x = 28
+		y = 5
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Economic_4b
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = STA_Economic_6b
+		icon = GFX_goal_GER_Attract_Investors
+		x = 28
+		y = 6
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Economic_5b
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Economic_final
+		icon = GFX_goal_GER_Attract_Investors
+		x = 27
+		y = 7
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Economic_6a
+		}
+		prerequisite = {
+			focus = STA_Economic_6b
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Industrialization
+		icon = GFX_goal_PB_AME_Construct_the_Empire_City
+		x = 30
+		y = 3
+		cost = 60
+
+		prerequisite = {
+			focus = STA_MilFac_1
+		}
+		prerequisite = {
+			focus = STA_Economic_2de
+		}
+		prerequisite = {
+			focus = STA_Economic_3
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = STA_Industrial_1
+		icon = GFX_goal_Focus_GER_Volkswagen
+		x = 31
+		y = 4
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Urbanization
+			focus = STA_Industrialization
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = STA_Industrial_2a
+		icon = GFX_goal_GER_Attract_Investors
+		x = 30
+		y = 5
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Industrial_1
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}	
+	
+	focus = {
+		id = STA_Industrial_3a
+		icon = GFX_goal_GER_Attract_Investors
+		x = 30
+		y = 6
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Industrial_2a
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}		
+
+	focus = {
+		id = STA_Industrial_2b
+		icon = GFX_goal_FRA_Dig_Sites
+		x = 32
+		y = 5
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Industrial_1
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = STA_Industrial_3b
+		icon = GFX_goal_GER_Attract_Investors
+		x = 32
+		y = 6
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Industrial_2b
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}	
+
+	focus = {
+		id = STA_Industrial_Final
+		icon = GFX_goal_PB_AME_Revive_The_Steel_Belt
+		x = 31
+		y = 7
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Industrial_3a		
+			focus = STA_Industrial_3b
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}		
+
+	focus = {
+		id = STA_Military_1
+		icon = GFX_RAJ_Question_The_Army
+		x = 27
+		y = 9
+		cost = 60
+
+        available = {
+			OR = {
+				has_completed_focus = STA_Concessions
+				has_completed_focus = STA_Early_Resignation
+				has_completed_focus = STA_Die_John
+			}
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+	focus = {
+		id = STA_SeaAir_1
+		icon = GFX_Focus_Study_Submachineguns
+		x = 27
+		y = 11
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Pinkerton_1
+			focus = STA_Peasant_Army
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_STA_Pinkertons_0
+				add_idea = PB_STA_Pinkertons_1
+			}
+			
+		}
+	}
+
+	focus = {
+		id = STA_SeaAir_2
+		icon = GFX_goal_Focus_Examine_Foreign_Tanks
+		x = 27
+		y = 12
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_SeaAir_1
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_STA_Pinkertons_0
+				add_idea = PB_STA_Pinkertons_1
+			}
+			
+		}
+	}
+
+	focus = {
+		id = STA_SeaAir_3
+		icon = GFX_goal_Focus_Generic_Maritime_Trade
+		x = 27
+		y = 13
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_SeaAir_2
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_STA_Pinkertons_0
+				add_idea = PB_STA_Pinkertons_1
+			}
+			
+		}
+	}
+
+
+	focus = {
+		id = STA_SeaAir_4
+		icon = GFX_goal_Focus_Generic_Maritime_Trade
+		x = 27
+		y = 14
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_SeaAir_3
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = STA_SeaAir_Final
+		icon = GFX_goal_Focus_Generic_Maritime_Trade
+		x = 27
+		y = 16
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_SeaAir_4
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = STA_Pinkerton_1
+		icon = GFX_goal_SWI_international_aid
+		x = 23
+		y = 10
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Military_1
+		}
+
+		mutually_exclusive = {
+			focus = STA_Peasant_Army
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_STA_Pinkertons_0
+				add_idea = PB_STA_Pinkertons_1
+			}
+			
+		}
+	}
+
+	focus = {
+		id = STA_Pinkertactics_1
+		icon = GFX_goal_Generic_Gunslinger
+		x = 22
+		y = 11
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Pinkerton_1	
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = STA_Pinkertactics_2
+		icon = GFX_goal_Generic_Special_Forces_Recon
+		x = 24
+		y = 11
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Pinkerton_1	
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}	
+
+
+	focus = {
+		id = STA_Mid_Pinkerton
+		icon = GFX_goal_SWI_international_aid
+		x = 23
+		y = 12
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Pinkertactics_1
+		}
+		prerequisite = {
+			focus = STA_Pinkertactics_2
+		}
+		prerequisite = {
+			focus = STA_Pinkertactics_3
+		}
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_STA_Pinkertons_2
+				add_idea = PB_STA_Pinkertons_3
+			}
+			
+		}
+	}
+
+	focus = {
+		id = STA_Pinkertactics_b1
+		icon = GFX_goal_PB_AME_Target_Sensodrug_Use
+		x = 22
+		y = 13
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Mid_Pinkerton	
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = STA_Pinkertactics_c1
+		icon = GFX_goal_SWI_international_aid
+		x = 22
+		y = 14
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Pinkertactics_b1
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}	
+
+	focus = {
+		id = STA_Pinkertactics_b2
+		icon = GFX_goal_Focus_FRA_Caste_Economy
+		x = 24
+		y = 13
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Mid_Pinkerton	
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}	
+	
+	focus = {
+		id = STA_Pinkertactics_c2
+		icon = GFX_goal_FRA_Not_One_Step_Back
+		x = 24
+		y = 14
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Pinkertactics_b2
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = STA_Final_Pinkerton
+		icon = GFX_goal_PB_GER_Modernize_Colonial_Forces
+		x = 23
+		y = 16
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Pinkertactics_c1
+		}
+		prerequisite = {
+			focus = STA_Pinkertactics_c2
+		}
+		prerequisite = {
+			focus = STA_Pinkertactics_c3
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_STA_Pinkertons_2
+				add_idea = PB_STA_Pinkertons_3
+			}
+			
+		}
+	}
+
+	focus = {
+		id = STA_Peasant_Army
+		icon = GFX_goal_agrarian_soldiers
+		x = 31
+		y = 10
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Military_1
+		}
+
+		mutually_exclusive = {
+			focus = STA_Military_2a
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_Law_Secret_Police
+				add_idea = PB_Law_Standard_Policing
+			}
+		}
+	}
+
+	focus = {
+		id = STA_Peasant_Army_1a
+		icon = GFX_Focus_Rifle_Production
+		x = 30
+		y = 11
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Peasant_Army
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Peasant_Army_1b
+		icon = GFX_goal_FRA_Rearmament_Campaigns
+		x = 32
+		y = 11
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Peasant_Army
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = STA_Peasant_Army_2
+		icon = GFX_goal_Generic_American_Soldier
+		x = 31
+		y = 12
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Peasant_Army_1a
+		}
+		prerequisite = {
+			focus = STA_Peasant_Army_1b
+		}		
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}	
+
+
+	focus = {
+		id = STA_Peasant_Army_3a
+		icon = GFX_goal_Focus_Mass_Assault_Doctrine
+		x = 30
+		y = 13
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Peasant_Army_2
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = STA_Peasant_Army_4a
+		icon = GFX_goal_Focus_Superior_Firepower_Doctrine
+		x = 30
+		y = 14
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Peasant_Army_3a
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = STA_Peasant_Army_3b
+		icon = GFX_Focus_Volunteer_Army
+		x = 32
+		y = 13
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Peasant_Army_2
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Peasant_Army_4b
+		icon = GFX_goal_agrarian_soldiers
+		x = 32
+		y = 14
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Peasant_Army_3b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Peasant_Army_Final
+		icon = GFX_goal_Generic_Agrarian_Soldiers
+		x = 31
+		y = 16
+		cost = 45
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Peasant_Army_4a
+		}
+		prerequisite = {
+			focus = STA_Peasant_Army_4b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = STA_Honest_1a
+		icon = GFX_Focus_Anarchist_Economy
+		x = 0
+		y = 5
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Concessions
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_No_Healthcare
+				add_idea = PB_Basic_Healthcare
+			}
+			swap_ideas = {
+				remove_idea = PB_State_Press
+				add_idea = PB_Limited_Censorship
+			}
+			swap_ideas = {
+				remove_idea = PB_18_Hour_Workday
+				add_idea = PB_14_Hour_Workday
+			}
+
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = STA_Honest_1b
+		icon = GFX_goal_Generic_Socialist_Man
+		x = 0
+		y = 6
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Honest_1a
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			PB_Poverty_Moderate_Progress_Increase = yes
+
+			add_manpower = 40000
+
+			881 = {
+				add_manpower = 250000
+				set_state_category = large_town
+				
+			}
+			894 = {
+				add_manpower = 50000
+				set_state_category = town
+			}
+		}
+	}
+
+	focus = {
+		id = STA_Honest_1c
+		icon = GFX_goal_KTG_Educate_natives
+		x = 1
+		y = 7
+		cost = 45
+
+		prerequisite = {
+			focus = STA_Honest_1b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_No_Welfare
+				add_idea = PB_Basic_Welfare
+			}
+		}
+	}
+
+	focus = {
+		id = STA_Chinese_Inclusion_Act
+		icon = GFX_goal_Generic_Forbidden_Palace
+		x = -1
+		y = 7
+		cost = 45
+
+		available = {
+			OR = {
+				country_exists = sca
+				MEI = {
+					exists = no
+				}
+				MEI = {
+					has_opinion = {
+						target = STA
+						value > 50
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = STA_Honest_1b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			881 = {
+				add_manpower = 100000
+				set_state_category = city
+			}
+			894 = {
+				add_manpower = 450000
+				
+			}
+			PB_Poverty_Moderate_Progress_Increase = yes
+		}
+	}
+
+	focus = {
+		id = STA_Bolstered_Workforce
+		icon = GFX_goal_SPR_employee_cooperation
+		x = 0
+		y = 8
+		cost = 60
+
+		prerequisite = {
+			focus = STA_Honest_1c
+			focus = STA_Chinese_Inclusion_Act
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_STA_Missing_Workforce
+				add_idea = PB_STA_Multiethnic_Workforce
+			}
+		}
+	}
+
+	focus = {
+		id = STA_Honest_2a
+		icon = GFX_goal_PB_AME_Megacorp_Tax
+		x = 3
+		y = 5
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Concessions
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Honest_2b
+		icon = GFX_goal_PB_ENG_A_Thinking_Economy
+		x = 3
+		y = 6
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Honest_2a
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Honest_2c
+		icon = GFX_goal_PB_ENG_Fund_Wetware
+		x = 3
+		y = 7
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Honest_2b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Honest_2d
+		icon = GFX_goal_PB_ENG_AutoCrisis
+		x = 3
+		y = 8
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Honest_2c
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Farmer_Subsidies
+		icon = GFX_goal_agricultural_aid
+		x = 5
+		y = 6
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Honest_3b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			every_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = farm
+					level = 2
+					instant_build = yes
+				}
+			}
+			modify_building_resources = {
+				building = farm
+				resource = grain
+				amount = 3
+			}			
+		}
+	}
+
+	focus = {
+		id = STA_Honest_3b
+		icon = GFX_goal_Generic_Land_Reform
+		x = 5
+		y = 5
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Concessions
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = STA_Honest_3c
+		icon = GFX_PB_Generic_Mining_Industry
+		x = 5
+		y = 7
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Honest_3b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}		
+
+	focus = {
+		id = STA_Honest_4a
+		icon = YUN_GFX_Goal_Bamboo_King_Society
+		x = 7
+		y = 5
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Concessions
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Honest_4b
+		icon = GFX_Generic_Market_Economy
+		x = 7
+		y = 6
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Honest_4a
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = STA_Honest_4c
+		icon = YUN_GFX_Goal_Bamboo_King_Society
+		x = 7
+		y = 7
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Honest_4b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}		
+
+	focus = {
+		id = STA_Diverse_Economy
+		icon = GFX_goal_PB_AME_North_American_Economic_Community
+		x = 6
+		y = 8
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Honest_4c
+		}
+		prerequisite = {
+			focus = STA_Honest_3c
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}		
+
+	
+	focus = {
+		id = STA_Remove_Concessions
+		icon = GFX_goal_AME_Lady_Economy
+		x = 3
+		y = 10
+		cost = 55
+
+		prerequisite = {
+			focus = STA_Diverse_Economy
+		}
+		prerequisite = {
+			focus = STA_Honest_2d
+		}
+		prerequisite = {
+			focus = STA_Bolstered_Workforce
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = STA_Concessions
+		icon = GFX_goal_CHI_Blatant_Corruption
+		x = 4
+		y = 4
+		cost = 7
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Gen_4
+		}
+
+		mutually_exclusive = {
+			focus = STA_Early_Resignation
+			focus = STA_Die_John
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Early_Resignation
+		icon = GFX_goal_Focus_Generic_Guillotine
+		x = 10
+		y = 4
+		cost = 7
+
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = STA_Gen_4
+		}
+
+		mutually_exclusive = {
+			focus = STA_Concessions
+			focus = STA_Die_John
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = STA_Johnomics_1
+		icon = GFX_goal_Focus_Spy_Infiltration
+		x = 10
+		y = 6
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Early_Resignation
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	
+	}
+		
+	focus = {
+		id = STA_Johnomics_2
+		icon = GFX_goal_AME_Renegotiate_Contribution
+		x = 10
+		y = 8
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_1
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = PB_STA_Subsidiary
+		}
+	
+	}
+
+
+	focus = {
+		id = STA_Johnomics_4a
+		icon = GFX_goal_Generic_Arrests
+		x = 8
+		y = 9
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_2
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	
+	}
+
+	focus = {
+		id = STA_Johnomics_4b
+		icon = GFX_goal_AME_Renegotiate_Contribution
+		x = 7
+		y = 10
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_4a
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	
+	}
+
+	focus = {
+		id = STA_Johnomics_5a
+		icon = GFX_goal_Focus_ENG_Imperial_Investment
+		x = 10
+		y = 9
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_2
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	
+	}
+
+	focus = {
+		id = STA_Johnomics_5b
+		icon = GFX_goal_Focus_ENG_Colonial_Immigration
+		x = 9
+		y = 10
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_5a
+		}
+		prerequisite = {
+			focus = STA_Johnomics_4a
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	
+	}
+
+	focus = {
+		id = STA_Johnomics_6a
+		icon = GFX_goal_AME_Renegotiate_Contribution
+		x = 12
+		y = 9
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_2
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	
+	}
+
+	focus = {
+		id = STA_Johnomics_5c
+		icon = GFX_goal_PB_FIN_Arms_Money
+		x = 11
+		y = 10
+		cost = 7
+
+
+		prerequisite = {
+			focus = STA_Johnomics_5a
+		}		
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	
+	}
+
+	focus = {
+		id = STA_Johnomics_6b
+		icon = GFX_goal_AME_Renegotiate_Contribution
+		x = 13
+		y = 10
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_6a
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	
+	}
+
+	focus = {
+		id = STA_Johnomics_7a
+		icon = GFX_goal_AME_Renegotiate_Contribution
+		x = 8
+		y = 11
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_4b
+		}
+		prerequisite = {
+			focus = STA_Johnomics_5b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	
+	}
+
+	focus = {
+		id = STA_Johnomics_7b
+		icon = GFX_goal_AME_Renegotiate_Contribution
+		x = 12
+		y = 11
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_5c
+		}
+		prerequisite = {
+			focus = STA_Johnomics_6b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	
+	}
+
+	focus = {
+		id = STA_Johnomics_Complete
+		icon = GFX_goal_PB_AME_Two_Empires
+		x = 10
+		y = 12
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Johnomics_7a
+		}
+		prerequisite = {
+			focus = STA_Johnomics_7b
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			remove_ideas = PB_STA_Subsidiary
+		}
+	
+	}
+
+	focus = {
+		id = STA_Die_John
+		icon = GFX_goal_Generic_Espionage
+		x = 16
+		y = 4
+		cost = 7
+
+		available = {
+			always = no
+		}
+
+		prerequisite = {
+			focus = STA_Gen_4
+		}
+
+		mutually_exclusive = {
+			focus = STA_Concessions
+			focus = STA_Early_Resignation
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Evil_Economic_1
+		icon = GFX_Focus_FRA_Reform_Military_Mass_Mobilization_Volksturm
+		x = 16
+		y = 5
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Die_John
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			send_embargo = AME
+			send_embargo = ENG
+			send_embargo = BCL
+			send_embargo = QUE
+			send_embargo = ACD
+		}
+	}
+	
+	focus = {
+		id = STA_Evil_Economic_2a
+		icon = GFX_goal_Generic_Execution
+		x = 14
+		y = 6
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Evil_Economic_1
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			PB_Economy_Small_Progress_Increase = yes
+		}
+	}
+	
+	focus = {
+		id = STA_Evil_Economic_2b
+		icon = GFX_goal_Generic_Slavery
+		x = 14
+		y = 7
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Evil_Economic_2a
+		}
+
+
+		available_if_capitulated = no
+
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = PB_18_Hour_Workday
+				add_idea = PB_No_Limit_Workday
+			}
+
+			add_manpower = 80000
+			
+			881 = {
+				add_manpower = 100000
+				set_state_category = large_town
+				
+			}
+			894 = {
+				add_manpower = 30000
+				set_state_category = town
+			}
+		}
+	}
+	
+	focus = {
+		id = STA_Evil_Economic_2c
+		icon = GFX_goal_Focus_Generic_Forced_Labour
+		x = 14
+		y = 8
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Evil_Economic_2b
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_Evil_Economic_3a
+		icon = GFX_goal_Generic_Shady_Deal02
+		x = 16
+		y = 6
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Evil_Economic_1
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			881 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			894 = {
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+
+	focus = { #megafarms
+		id = STA_Evil_Economic_3b 
+		icon = GFX_AME_subsidize_agriculture_in_the_west
+		x = 16
+		y = 7
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Evil_Economic_3a
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			every_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			modify_building_resources = {
+				building = farm
+				resource = grain
+				amount = 5
+			}
+		}
+	}
+	
+	focus = {
+		id = STA_Evil_Economic_3c
+		icon = GFX_goal_PB_FIN_Expand_Drug
+		x = 16
+		y = 8
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Evil_Economic_3b
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 2
+				category = cat_terror_weapons
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_augmented_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = STA_Evil_Economic_4a
+		icon = GFX_goal_PB_AME_Lang_Carrot
+		x = 18
+		y = 6
+		cost = 30
+
+		prerequisite = {
+			focus = STA_Evil_Economic_1
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = STA_Evil_Economic_4b
+		icon = GFX_goal_Generic_Espionage02
+		x = 18
+		y = 7
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Evil_Economic_4a
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+		
+	focus = {
+		id = STA_Evil_Economic_4c
+		icon = GFX_goal_generic_control_money
+		x = 18
+		y = 8
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Evil_Economic_4b
+		}
+
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = PB_STA_Market_Manipulation
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = STA_Evil_Complete
+		icon = GFX_PB_Focus_Fear
+		x = 16
+		y = 10
+		cost = 7
+
+		prerequisite = {
+			focus = STA_Evil_Economic_2c
+		}
+		prerequisite = {
+			focus = STA_Evil_Economic_3c
+		}
+		prerequisite = {
+			focus = STA_Evil_Economic_4c
+		}
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_War_1
+		icon = GFX_goal_Generic_Warlord_China_Box
+		x = 10
+		y = 14
+		cost = 7
+        
+		available = {
+			OR = {
+				has_completed_focus = STA_Johnomics_Complete
+				has_completed_focus = STA_Evil_Complete
+				has_completed_focus = STA_Remove_Concessions
+			}
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = STA_War_2a
+		icon = GFX_goal_Generic_Warlord_China_Box
+		x = 8
+		y = 15
+		cost = 7
+        
+		prerequisite = {
+			focus = STA_War_1
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			declare_war_on = {
+				target = DER
+				type = annex_everything
+			}
+			797 = {
+				add_core_of = STA
+			}
+			904 = {
+				add_core_of = STA
+			}
+		}
+	}
+
+	focus = {
+		id = STA_War_2b
+		icon = GFX_goal_Generic_Warlord_China_Box
+		x = 10
+		y = 15
+		cost = 7
+        
+		prerequisite = {
+			focus = STA_War_1
+		}
+
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			declare_war_on = {
+				target = GRN
+				type = annex_everything
+			}
+			799 = {
+				add_core_of = STA
+			}
+			901 = {
+				add_core_of = STA
+			}
+			382 = {
+				add_core_of = STA
+			}
+		}
+	}
+	
+	focus = {
+		id = STA_War_2c
+		icon = GFX_goal_Generic_Warlord_China_Box
+		x = 12
+		y = 15
+		cost = 7
+
+		available_if_capitulated = no
+		
+		prerequisite = {
+			focus = STA_War_1
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = CMC
+				type = annex_everything
+			}
+			376 = {
+				add_core_of = STA
+			}
+			374 = {
+				add_core_of = STA
+			}
+		}
+	}	
+}

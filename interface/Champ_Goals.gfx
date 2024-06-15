@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_goal_Focus_STA_milkshake"
+		texturefile = "gfx/interface/goals/Focus_STA_milkshake.dds"
+	}
+
+}
+
