@@ -192,8 +192,8 @@ ideas = {
 			
 			modifier = {
 				experience_gain_army_factor = -0.2
-				send_volunteer_divisions_required = -0.4
-				army_attack_factor = 0.1
+				send_volunteer_divisions_required = -1
+				army_attack_factor = 0.05
 				consumer_goods_factor = 0.1
 				non_core_manpower = -0.2
 			}
@@ -216,15 +216,64 @@ ideas = {
 			
 			modifier = {
 				experience_gain_army_factor = 0.05
-				send_volunteer_divisions_required = -0.4
+				send_volunteer_divisions_required = -1
 				army_attack_factor = 0.05
 				special_forces_attack_factor = 0.1
-				non_core_manpower = -0.3
+				non_core_manpower = -0.2
 			}
 
 			removal_cost = -1
 	
 		}
+
+
+		PB_STA_Pinkerrecon = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = GSX_idea_HOL_defense_spending_spree
+			
+			modifier = {
+				recon_factor = 0.1
+				non_core_manpower = -0.1				
+			}
+
+			removal_cost = -1
+	
+		}
+
+		PB_STA_Pinkertons_2a = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = GSX_idea_HOL_defense_spending_spree
+			
+			modifier = {
+				experience_gain_army_factor = 0.05
+				send_volunteer_divisions_required = -1
+				army_attack_factor = 0.05
+				special_forces_attack_factor = 0.1
+				non_core_manpower = -0.45
+				recon_factor = 0.1
+				non_core_manpower = -0.2				
+			}
+
+			removal_cost = -1
+	
+		}
+
 		PB_STA_Pinkertons_2 = {
 			
 			allowed = {
@@ -239,10 +288,10 @@ ideas = {
 			
 			modifier = {
 				experience_gain_army_factor = 0.1
-				send_volunteer_divisions_required = -0.6
+				send_volunteer_divisions_required = -1
 				army_attack_factor = 0.05
 				special_forces_attack_factor = 0.2
-				non_core_manpower = -0.35
+				non_core_manpower = -0.6
 			}
 
 			removal_cost = -1

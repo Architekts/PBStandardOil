@@ -38,6 +38,9 @@ PB_STA_Subsidiary_desc:0 "After the hostile takeover, the Boomtown operation has
 PB_STA_Pinkertons_0:0 "Pinkertons"
 PB_STA_Pinkertons_0_desc:0 "The Pinkerton Detective Agency have been the strong-arm of American corporations since the industrial age. For the right amount of money, they will conduct espionage, union-bust, assassinate, and anything else on the table for the right price. The thing about it, is that if you can buy their services, someone else can, so it's always advised to watch your back around them."
 
+PB_STA_Pinkertons_1:0 "Pinkerton Reforms, Phase 1"
+PB_STA_Pinkertons_1_desc:0 "The Pinkerton Detective Agency have been the strong-arm of American corporations since the industrial age. For the right amount of money, they will conduct espionage, union-bust, assassinate, and anything else on the table for the right price. The thing about it, is that if you can buy their services, someone else can, so it's always advised to watch your back around them."
+
 ####################
 # FOCI
 #####################
@@ -113,20 +116,32 @@ STA_Research_Final_desc:0 "We've come a long ways out here in the frontier, forg
 STA_Economic_2c:0 "Bring in Investors"
 STA_Economic_2c_desc:0 "In an effort to build up our operations out here, we'll put together some lobbying efforts to attract investors."
 
+STA_Economic_2d:0 "Refinement Techniques"
+STA_Economic_2d_desc:0 "There are several tricks of the trade when it comes to the oil industry. Now that we have the resources, we can continue to perfect the art of drilling liquid gold out of the earth"
+
 STA_Economic_3:0 "Lands of Opprotunity"
 STA_Economic_3_desc:0 "We've posessed lands underutilized by its former proprietors. Let's correct their faults and make something great out here."
 
 STA_Military_1:0 "Dealing with the Pinkertons"
 STA_Military_1_desc:0 "We'll have to decide on what to do about our reliance on the Pinkertons, who have served as loyal enforcers for us since our founding out here, but until the recent incident, we must put their loyalty into question."
 
+STA_Pinkertactics_1:0 "Ranger Tactics"
+STA_Pinkertactics_1_desc:0 "During our time in the Republic, our Pinkertons have learned a thing or two while in proximity to the Desert Rangers."
+
+STA_Pinkertactics_2:0 "Frontier Scouts"
+STA_Pinkertactics_2_desc:0 "While originally being private investigators, their perception has only been heightened through their expeirence in the frontier"
+
 STA_Pinkerton_1:0 "Doubling Down"
-STA_Pinkerton_1_desc:0 "The Pinkertons are too useful of an asset to abandon. Let's use them "
+STA_Pinkerton_1_desc:0 "The Pinkertons are too useful of an asset to abandon."
 
 STA_Mid_Pinkerton:0 "Into the Fold"
 STA_Mid_Pinkerton_desc:0 "Just so that the prior incident can never happen again, we will purchase the Pinkerton Detective Agency outright and redirect any business dealings through our main channels, essentially converting them into a militarized branch of the Rockefeller conglomerate."
 
 STA_Pinkertactics_b1:0 "I Can't Feel Anything"
 STA_Pinkertactics_b1_desc:0 "Good thing we're so drugged up otherwise the bullet I just took to the lung would probably really hurt right now"
+
+STA_Pinkertactics_c1:0 "Terrain Mastery"
+STA_Pinkertactics_c1_desc:0 "Terrain Mastery"
 
 STA_Pinkertactics_b2:0 "Strikebreakers"
 STA_Pinkertactics_b2_desc:0 "The favorite pastime for the Pinkertons: union busting and strike-breaking. Let's have them excel at their art by giving them Hardsuits.\n\nIt would be interesting to see how an angry factory worker would stand against the unstoppable force from the boot of a mechanized supersoldier.\n\nLets see what happens!"

@@ -1,6 +1,6 @@
 version="1"
 dependencies = {
-	"PaxBritannicaRedux devel"
+	"PaxBritannicaRedux Dev Build"
 }
 tags={
 	"Alternative History"

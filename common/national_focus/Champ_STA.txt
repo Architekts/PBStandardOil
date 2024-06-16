@@ -893,10 +893,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = PB_STA_Pinkertons_0
-				add_idea = PB_STA_Pinkertons_1
-			}
 			
 		}
 	}
@@ -916,7 +912,10 @@ focus_tree = {
 
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = PB_STA_Pinkertons_0
+				add_idea = PB_STA_Pinkertons_1
+			}
 		}
 	}
 	
@@ -935,14 +934,14 @@ focus_tree = {
 
 
 		completion_reward = {
-			
+			add_ideas = PB_STA_Pinkerrecon
 		}
 	}	
 
 
 	focus = {
 		id = STA_Mid_Pinkerton
-		icon = GFX_goal_SWI_international_aid
+		icon = GFX_AME_the_bonus_brigade_crisis
 		x = 23
 		y = 12
 		cost = 45
@@ -960,10 +959,11 @@ focus_tree = {
 
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = PB_STA_Pinkertons_2
-				add_idea = PB_STA_Pinkertons_3
-			}
+			remove_ideas ={
+				PB_STA_Pinkerrecon
+				PB_STA_Pinkertons_1
+				} 
+			add_ideas = PB_STA_Pinkertons_2a
 			
 		}
 	}
@@ -989,7 +989,7 @@ focus_tree = {
 	
 	focus = {
 		id = STA_Pinkertactics_c1
-		icon = GFX_goal_SWI_international_aid
+		icon = GFX_goal_Generic_Jungle_Insurgency
 		x = 22
 		y = 14
 		cost = 45
@@ -1066,8 +1066,8 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = PB_STA_Pinkertons_2
-				add_idea = PB_STA_Pinkertons_3
+				remove_idea = PB_STA_Pinkertons_2a
+				add_idea = PB_STA_Pinkertons_2
 			}
 			
 		}
